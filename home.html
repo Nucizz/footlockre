@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootLockRE | #morethansneaker</title>
+
+    <link href="./Styles/main_styles.css" rel="stylesheet">
+    <link href="./Styles/home_styles.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <marquee id="identity" loop="1" behavior="slide">
+      Calvin Anacia Suciawan &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 2540115225 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Human Computer Interaction &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; BA03 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Lab Final Project
+    </marquee>
+
+    <header>
+        
+        <img src="./Assets/FootLockRE Logo.png" class="logo-head">
+
+        <nav>
+            <a class="nav-btn" href="./home.html">Home</a>
+            <a class="nav-btn" href="./shoes.html">Shoes</a>
+            <a class="nav-btn" href="./aboutus.html">About Us</a>
+            <a class="nav-btn" href="./events.html">Events</a>
+            <a class="nav-btn" href="./subscribe.html">Subscribe</a>
+        </nav>
+
+        <div class="nav-dropdown">
+
+          <a class="nav-dropdown-btn">
+            <img src="./Assets/UI/Hamburger Icon.svg" class="nav-dropdown-btn-icon">
+          </a>
+
+          <div class="nav-dropdown-list">
+            <a class="nav-dropdown-item" href="./home.html">Home</a>
+            <a class="nav-dropdown-item" href="./shoes.html">Shoes</a>
+            <a class="nav-dropdown-item" href="./aboutus.html">About Us</a>
+            <a class="nav-dropdown-item" href="./events.html">Events</a>
+            <a class="nav-dropdown-item" href="./subscribe.html">Subscribe</a>
+          </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="car-container">
+
+            <div class="car-item fade">
+              <img src="./Assets/Carousel/FootLockRE x ITZY.png" style="width:100%">
+            </div>
+          
+            <div class="car-item fade">
+              <img src="./Assets/Carousel/FootLockRE Limited Offer.png" style="width:100%">
+            </div>
+          
+            <div class="car-item fade">
+              <img src="./Assets/Carousel/FootLockRE Exclusive Item Air Force 1 Shadow.png" style="width:100%">
+            </div>
+
+            <div class="car-nav-row">
+              <a onclick="changeIndex(-1)">
+                <img src="./Assets/UI/Previous Button.svg" class="car-nav-btn" >
+              </a>
+              <a onclick="changeIndex(1)">
+                <img src="./Assets/UI/Next Button.svg" class="car-nav-btn" >
+              </a>
+            </div>
+
+            <div class=car-nav-dot-row>
+              <span class="car-nav-dot" onclick="currentIndex(1)"></span>
+              <span class="car-nav-dot" onclick="currentIndex(2)"></span>
+              <span class="car-nav-dot" onclick="currentIndex(3)"></span>
+            </div>
+
+          </div>
+          
+          <div class="banner" style="margin-bottom: 2.5%;">
+            <h1>MORE THAN SNEAKERS</h1>
+            <div class="banner-text">
+              <span>"Sneakers are more than just shoes,</span>
+                <span>they are a form of self-expression and a statement of style."</span>
+            </div>
+            
+            <div class="banner-btn"> 
+              <button id="btn-learnmore" onclick="location.href='./aboutus.html';">
+                Learn More
+              </button>
+              <button id="btn-shoes" onclick="location.href='./shoes.html';">
+                Explore
+              </button>
+            </div>
+
+          </div>
+
+          <div class="featured" style="margin-bottom: 2.5%;">
+            <h2>MOST POPULAR</h2>
+            <ol class="featured-list">
+
+              <a class="featured-item" onmouseover="hoverState('MP1')" onmouseout="defaultState('MP1')" href="https://www.kickavenue.com/sneakers/nike/nike-dunk-low-setsubun-2022-dq5009-268-ka">
+                <img src="./Assets/Items/Most Popular/Nike Dunk Low Setsubun (2022)/1.webp" class="featured-item-img" id="MP1">
+                <h4>Nike Dunk Low Setsubun (2022)</h4>
+                <h5>IDR 2,750,000</h5>
+              </a>
+
+              <a class="featured-item" onmouseover="hoverState('MP2')" onmouseout="defaultState('MP2')" href="https://www.kickavenue.com/sneakers/adidas/adidas-samba-classic-772109-ka">
+                <img src="./Assets/Items/Most Popular/Adidas Samba Classic White/1.webp" class="featured-item-img" id="MP2">
+                <h4>Adidas Samba Classic</h4>
+                <h5>IDR 1,500,000</h5>
+              </a>
+
+              <a class="featured-item" onmouseover="hoverState('MP3')" onmouseout="defaultState('MP3')" href="https://www.kickavenue.com/sneakers/nike/jordan-1-retro-high-og-lost-and-found-dz5485-612-ka-2">
+                <img src="./Assets/Items/Most Popular/Jordan 1 Retro High OG Lost and Found/1.webp" class="featured-item-img" id="MP3">
+                <h4>Jordan 1 Retro High OG Lost and Found</h4>
+                <h5>IDR 1,500,000</h5>
+              </a>
+
+              <a class="featured-item" onmouseover="hoverState('MP4')" onmouseout="defaultState('MP4')" href="https://www.kickavenue.com/sneakers/nike/nike-air-force-1-07-triple-white-2021-cw2288-111-ka">
+                <img src="./Assets/Items/Most Popular/Nike Air Force 1 Low '07 Triple White (2021)/1.webp" class="featured-item-img" id="MP4">
+                <h4>Nike Air Force 1 Low '07 Triple White (2021)</h4>
+                <h5>IDR 1,500,000</h5>
+              </a>
+              
+            </ol>
+          </div>
+
+          <div class="featured" style="margin-bottom: 5%;">
+            <h2>NEW ARRIVALS</h2>
+            <ol class="featured-list">
+
+              <a class="featured-item" onmouseover="hoverState('NA1')" onmouseout="defaultState('NA1')" href="https://www.kickavenue.com/sneakers/new-balance/new-balance-530-white-silver-navy-mr530sg-ka-2">
+                <img src="./Assets/Items/New Release/New Balance 530 White Silver Navy/1.webp" class="featured-item-img" id="NA1">
+                <h4>New Balance 530 White Silver Navy</h4>
+                <h5>IDR 1,450,000</h5>
+              </a>
+
+              <a class="featured-item" onmouseover="hoverState('NA2')" onmouseout="defaultState('NA2')" href="https://www.kickavenue.com/sneakers/nike/nike-dunk-low-ocean-bliss-citron-tint-w-dd1503-123-ka-2">
+                <img src="./Assets/Items/New Release/Nike Dunk Low Ocean Bliss Citron Tint (W)/1.webp" class="featured-item-img" id="NA2">
+                <h4>Nike Dunk Low Ocean Bliss Citron Tint (W)</h4>
+                <h5>IDR 1,650,000</h5>
+              </a>
+
+              <a class="featured-item" onmouseover="hoverState('NA3')" onmouseout="defaultState('NA3')" href="https://www.kickavenue.com/sneakers/nike/nike-flow-2020-ispa-se-dutch-green-dh4026-300-ka">
+                <img src="./Assets/Items/New Release/Nike Flow 2020 ISPA SE Dutch Green/1.webp" class="featured-item-img" id="NA3">
+                <h4>Nike Flow 2020 ISPA SE Dutch Green</h4>
+                <h5>IDR 750,000</h5>
+              </a>
+
+              <a class="featured-item" onmouseover="hoverState('NA4')" onmouseout="defaultState('NA4')" href="https://www.kickavenue.com/sneakers/vans/vans-sk8-hi-reissue-vly-lx-noon-goons-white-snake-vn0a4bvh616-ka-2">
+                <img src="./Assets/Items/New Release/Vans Sk8-Hi Reissue VLY LX Noon Goons White Snake/1.webp" class="featured-item-img" id="NA4">
+                <h4>Vans Sk8-Hi Reissue VLY LX Noon Goons White Snake</h4>
+                <h5>IDR 1,000,000</h5>
+              </a>
+              
+            </ol>
+          </div>
+
+    </main>
+
+    <footer>
+
+      <a class="footer-logo" href="#">
+        <img src="./Assets/UI/FootLockRE Footer.svg" class="footer-logo-img">
+      </a>
+
+      <span class="footer-text">Copyright © 2023 FootLockRE. All rights reserved.</span>
+
+      <ol class="footer-link">
+
+        <a class="footer-link-btn" href="https://www.facebook.com/profile.php?id=100072827313021">
+          <img src="./Assets/UI/Facebook Icon.svg" class="footer-link-icon">
+        </a>
+        
+        <a class="footer-link-btn" href="https://www.instagram.com/calvin_anacia/">
+          <img src="./Assets/UI/Instagram Icon.svg" class="footer-link-icon">
+        </a>
+
+        <a class="footer-link-btn" href="https://twitter.com/calvin_anacia">
+          <img src="./Assets/UI/Twitter Icon.svg" class="footer-link-icon">
+        </a>
+
+        <a class="footer-link-btn" href="https://www.youtube.com/watch?v=yCCTVWKdJgI">
+          <img src="./Assets/UI/Youtube Button.svg" class="footer-link-icon">
+        </a>
+
+      </ol>
+
+    </footer>
+
+</body>
+
+<script src="./Scripts/carousel.js"></script>
+<script src="./Scripts/image_hover.js"></script>
+<script>
+  let marquee = document.getElementById("identity");
+  marquee.style.display = "block";
+  setTimeout(function() {marquee.style.display = "none"}, 21500);
+</script>
+
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootLockRE | Shoes</title>
+
+    <link href="./Styles/main_styles.css" rel="stylesheet">
+    <link href="./Styles/shoes_styles.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    
+    <header>
+        
+        <img src="./Assets/FootLockRE Logo.png" class="logo-head">
+
+        <nav>
+
+            <a class="nav-btn" href="./home.html">Home</a>
+            <a class="nav-btn" href="./shoes.html">Shoes</a>
+            <a class="nav-btn" href="./aboutus.html">About Us</a>
+            <a class="nav-btn" href="./events.html">Events</a>
+            <a class="nav-btn" href="./subscribe.html">Subscribe</a>
+
+        </nav>
+
+        <div class="nav-dropdown">
+
+          <a class="nav-dropdown-btn">
+            <img src="./Assets/UI/Hamburger Icon.svg" class="nav-dropdown-btn-icon">
+          </a>
+
+          <div class="nav-dropdown-list">
+            <a class="nav-dropdown-item" href="./home.html">Home</a>
+            <a class="nav-dropdown-item" href="./shoes.html">Shoes</a>
+            <a class="nav-dropdown-item" href="./aboutus.html">About Us</a>
+            <a class="nav-dropdown-item" href="./events.html">Events</a>
+            <a class="nav-dropdown-item" href="./subscribe.html">Subscribe</a>
+          </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+      <div class="divider">
+
+        <div class="filter">
+
+          <h2 class="filter-heading">FILTER</h2>
+
+          <hr>
+
+          <div>
+
+            <h4 class="filter-title">BRAND</h4>
+
+            <ol class="filter-item-list">
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Adidas
+                </div>
+                <span class="filter-item-qty">(5)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Nike
+                </div>
+                <span class="filter-item-qty">(5)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  New Balance
+                </div>
+                <span class="filter-item-qty">(3)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Vans
+                </div>
+                <span class="filter-item-qty">(3)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Asics
+                </div>
+                <span class="filter-item-qty">(2)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Jordan
+                </div>
+                <span class="filter-item-qty">(3)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Puma
+                </div>
+                <span class="filter-item-qty">(2)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Converse
+                </div>
+                <span class="filter-item-qty">(2)</span>
+              </ul>
+
+            </ol>
+
+          </div>
+
+          <hr>
+
+          <div>
+
+            <h4 class="filter-title">GENDER</h4>
+
+            <ol class="filter-item-list">
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Unisex
+                </div>
+                <span class="filter-item-qty">(24)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Men
+                </div>
+                <span class="filter-item-qty">(24)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Women
+                </div>
+                <span class="filter-item-qty">(1)</span>
+              </ul>
+
+            </ol>
+
+          </div>
+
+          <hr>
+
+          <div>
+
+            <h4 class="filter-title">STATUS</h4>
+
+            <ol class="filter-item-list">
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Limited Stock
+                </div>
+                <span class="filter-item-qty">(4)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  Pre-order
+                </div>
+                <span class="filter-item-qty">(2)</span>
+              </ul>
+
+              <ul class="filter-item">
+                <div class="filter-item-name">
+                  <input type="checkbox">
+                  New Release
+                </div>
+                <span class="filter-item-qty">(6)</span>
+              </ul>
+
+            </ol>
+
+          </div>
+
+        </div>
+
+        <a class="drawer-btn" onclick="openFilter()">
+          <img src="./Assets/UI/Filter Icon.svg" class="filter-icon">
+          Filter
+        </a>
+        <div class="drawer" id="drawer">
+          <div class="filter-drawer">
+            <div class="drawer-title">
+              <h2>FILTER</h2>
+              <a class="drawer-close" onclick="closeFilter()">&times;</a>
+            </div>
+
+            <div style="margin-bottom: 0.75rem;">
+              <hr>
+
+              <h3 style="margin-bottom: 0.75rem;">BRANDS</h3>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Adidas
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Nike
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                New Balance
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Vans
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Asics
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Jordan
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Puma
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Converse
+              </div>
+
+            </div>
+
+            <div style="margin-bottom: 0.75rem;">
+              <hr>
+
+              <h3 style="margin-bottom: 0.75rem;">GENDER</h3>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Unisex
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Men
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Women
+              </div>
+
+            </div>
+
+            <div style="margin-bottom: 0.75rem;">
+              <hr>
+
+              <h3 style="margin-bottom: 0.75rem;">STATUS</h3>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Limited Stock
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                Pre-Order
+              </div>
+
+              <div class="drawer-item">
+                <input type="checkbox">
+                New Release
+              </div>
+
+            </div>
+  
+          </div>
+        </div>
+
+        <div class="listing" id="lists">
+
+          <a class="listing-item" onmouseover="hoverState('1')" onmouseleave="defaultState('1')"
+          href="https://www.kickavenue.com/sneakers/nike/nike-dunk-low-setsubun-2022-dq5009-268-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Nike Dunk Low Setsubun (2022).webp" class="listing-item-img">
+              <img id='1' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Nike Dunk Low Setsubun (2022)</h4>
+            <h5>IDR 2,750,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('2')" onmouseleave="defaultState('2')"
+          href="https://www.kickavenue.com/sneakers/nike/nike-dunk-low-ocean-bliss-citron-tint-w-dd1503-123-ka-2">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Nike Dunk Low Ocean Bliss Citron Tint (W).webp" class="listing-item-img">
+              <img id='2' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Nike Dunk Low Ocean Bliss Citron Tint (W)</h4>
+            <h5>IDR 1,650,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('3')" onmouseleave="defaultState('3')"
+          href="https://www.kickavenue.com/sneakers/adidas/adidas-4dfwd-reflective-xeno-q46447-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Adidas 4DFWD Reflective Xeno.webp" class="listing-item-img">
+              <img id='3' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Adidas 4DFWD Reflective Xeno</h4>
+            <h5>IDR 3,300,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('4')" onmouseleave="defaultState('4')"
+          href="https://www.kickavenue.com/sneakers/new-balance/new-balance-2002r-gore-tex-tobacco-m2002rxg-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/New Balance 2002R Gore-Tex Tobacco.webp" class="listing-item-img">
+              <img id='4' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">New Balance 2002R Gore-Tex Tobacco</h4>
+            <h5>IDR 4,100,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('5')" onmouseleave="defaultState('5')"
+          href="https://www.ourdailydose.net/puma-suede-classic-xxi-puma-black-puma-black.html">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Puma Suede Classic XXI Puma Black.webp" class="listing-item-img">
+              <img id='5' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Puma Suede Classic XXI Puma Black</h4>
+            <h5>IDR 1,399,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('6')" onmouseleave="defaultState('6')"
+          href="https://www.kickavenue.com/sneakers/adidas/adidas-samba-classic-772109-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Adidas Samba Classic White.webp" class="listing-item-img">
+              <img id='6' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Adidas Samba Classic White</h4>
+            <h5>IDR 1,500,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('7')" onmouseleave="defaultState('7')"
+          href="https://www.kickavenue.com/sneakers/nike/nike-flow-2020-ispa-se-dutch-green-dh4026-300-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Nike Flow 2020 ISPA SE Dutch Green.webp" class="listing-item-img">
+              <img id='7' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Nike Flow 2020 ISPA SE Dutch Green</h4>
+            <h5>IDR 750,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('8')" onmouseleave="defaultState('8')"
+          href="https://www.kickavenue.com/sneakers/adidas/adidas-eqt93-sandals-gz7200-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Adidas EQT93 Sandals.webp" class="listing-item-img">
+              <img id='8' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Adidas EQT93 Sandals</h4>
+            <h5>IDR 1,250,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('9')" onmouseleave="defaultState('9')"
+          href="https://www.kickavenue.com/sneakers/new-balance/new-balance-574-tds-tokyo-design-studio-2040-castlerock-ms574tcc-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/New Balance 574 TDS Tokyo Design Studio 2040 Castlerock.webp" class="listing-item-img">
+              <img id='9' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">New Balance 574 TDS Tokyo Design Studio 2040 Castlerock</h4>
+            <h5>IDR 6,100,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('10')" onmouseleave="defaultState('10')"
+          href="https://www.ourdailydose.net/asics-gel-quantum-360-vii-women-standard-black-vapor.html">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Asics Gel-Quantum 360 VII Women Standard BlackVapor.webp" class="listing-item-img">
+              <img id='10' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Asics Gel-Quantum 360 VII Women Standard Black/Vapor</h4>
+            <h5>IDR 2,299,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('11')" onmouseleave="defaultState('11')"
+          href="https://www.kickavenue.com/sneakers/nike/jordan-1-retro-high-og-lost-and-found-dz5485-612-ka-2">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Jordan 1 Retro High OG Lost and Found.webp" class="listing-item-img">
+              <img id='11' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Jordan 1 Retro High OG Lost and Found</h4>
+            <h5>IDR 5,300,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('12')" onmouseleave="defaultState('12')"
+          href="https://www.kickavenue.com/sneakers/vans/vans-sk8-hi-reissue-vly-lx-noon-goons-white-snake-vn0a4bvh616-ka-2">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Vans Sk8-Hi Reissue VLY LX Noon Goons White Snake.webp" class="listing-item-img">
+              <img id='12' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Vans Sk8-Hi Reissue VLY LX Noon Goons White Snake</h4>
+            <h5>IDR 1,000,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('13')" onmouseleave="defaultState('13')"
+          href="https://www.kickavenue.com/sneakers/adidas/adidas-adifom-q-grey-four-hp6585-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Adidas adiFOM Q Grey Four.webp" class="listing-item-img">
+              <img id='13' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Adidas adiFOM Q Grey Four</h4>
+            <h5>IDR 2,400,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('14')" onmouseleave="defaultState('14')"
+          href="https://www.kickavenue.com/sneakers/vans/vans-old-skool-tape-eco-theory-checkerboard-vn0a54f4705-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Vans Old Skool Tape Eco Theory Checkerboard.webp" class="listing-item-img">
+              <img id='14' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Vans Old Skool Tape Eco Theory Checkerboard</h4>
+            <h5>IDR 1,550,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('15')" onmouseleave="defaultState('15')"
+          href="https://www.ourdailydose.net/asics-gel-sonoma-15-50-black-obsidian-grey.html">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Asics Gel-Sonoma 15-50 BlackObsidian Grey.webp" class="listing-item-img">
+              <img id='15' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Asics Gel-Sonoma 15-50 Black</h4>
+            <h5>IDR 1,699,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('16')" onmouseleave="defaultState('16')"
+          href="https://www.kickavenue.com/sneakers/nike/nike-air-force-1-07-triple-white-2021-cw2288-111-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Nike Air Force 1 Low '07 Triple White (2021).webp" class="listing-item-img">
+              <img id='16' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Nike Air Force 1 Low '07 Triple White (2021)</h4>
+            <h5>IDR 1,000,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('17')" onmouseleave="defaultState('17')"
+          href="https://www.kickavenue.com/sneakers/air-jordan/jordan-4-retro-red-thunder-ct8527-016-ka-2?collection=four-you&collection_id=383">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Jordan 4 Retro Red Thunder.webp" class="listing-item-img">
+              <img id='17' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Jordan 4 Retro Red Thunder</h4>
+            <h5>IDR 5,500,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('18')" onmouseleave="defaultState('18')"
+          href="https://www.kickavenue.com/sneakers/nike/nike-air-max-1-summit-white-phantom-w-fb5059-100-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Nike Air Max 1 Summit White Phantom (W).webp" class="listing-item-img">
+              <img id='18' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Nike Air Max 1 Summit White Phantom (W)</h4>
+            <h5>IDR 3,500,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('19')" onmouseleave="defaultState('19')"
+          href="https://www.kickavenue.com/sneakers/vans/vans-old-skool-patchwork-pretty-guardian-sailor-moon-vn0005u7448-ka-2">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Vans Old Skool Patchwork Pretty Guardian Sailor Moon.webp" class="listing-item-img">
+              <img id='19' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Vans Old Skool Patchwork Pretty Guardian Sailor Moon</h4>
+            <h5>IDR 1,750,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('20')" onmouseleave="defaultState('20')"
+          href="https://www.zalora.co.id/p/converse-chuck-taylor-all-star-rave-black-3728269?catalogType=Brand&listId=Converse">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Converse Chuck Taylor All Star Rave Black.webp" class="listing-item-img">
+              <img id='20' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Converse Chuck Taylor All Star Rave Black</h4>
+            <h5>IDR 999,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('21')" onmouseleave="defaultState('21')"
+          href="https://www.kickavenue.com/sneakers/new-balance/new-balance-530-white-silver-navy-mr530sg-ka-2">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/New Balance 530 White Silver Navy.webp" class="listing-item-img">
+              <img id='21' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">New Balance 530 White Silver Navy</h4>
+            <h5>IDR 1,450,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('22')" onmouseleave="defaultState('22')"
+          href="https://www.kickavenue.com/sneakers/adidas/adidas-superstar-melting-sadness-bee-fz5254-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Adidas Superstar Melting Sadness Bee.webp" class="listing-item-img">
+              <img id='22' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Adidas Superstar Melting Sadness Bee</h4>
+            <h5>IDR 3,800,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('23')" onmouseleave="defaultState('23')"
+          href="https://www.kickavenue.com/sneakers/air-jordan/jordan-5-retro-unc-university-blue-dv1310-401-ka">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Jordan 5 Retro UNC University Blue.webp" class="listing-item-img">
+              <img id='23' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Jordan 5 Retro UNC University Blue</h4>
+            <h5>IDR 5,000,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('24')" onmouseleave="defaultState('24')"
+          href="https://www.ourdailydose.net/puma-rider-fv-coca-cola-intense-red-puma-silver.html">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Puma Rider FV Coca Cola Intense Red-Puma Silver.webp" class="listing-item-img">
+              <img id='24' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Puma Rider FV Coca Cola Intense Red-Puma Silver</h4>
+            <h5>IDR 1,999,000</h5>
+          </a>
+
+          <a class="listing-item" onmouseover="hoverState('25')" onmouseleave="defaultState('25')"
+          href="https://www.zalora.co.id/p/converse-chuck-taylor-all-star-canvas-hi-red-2791270?catalogType=Brand&listId=Converse">
+            <div style="position: relative;">
+              <img src="./Assets/Items/All/Converse Chuck Taylor All Star Canvas - Hi Red.webp" class="listing-item-img">
+              <img id='25' src="./Assets/UI/Item Hover Overlay.svg" class="listing-item-img item-hover" style="display: none">
+            </div>
+            <h4 class="listing-item-name">Converse Chuck Taylor All Star Canvas - Hi Red</h4>
+            <h5>IDR 799,000</h5>
+          </a>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      <a class="footer-logo" href="#">
+        <img src="./Assets/UI/FootLockRE Footer.svg" class="footer-logo-img">
+      </a>
+
+      <span class="footer-text">Copyright © 2023 FootLockRE. All rights reserved.</span>
+
+      <ol class="footer-link">
+
+        <a class="footer-link-btn" href="https://www.facebook.com/profile.php?id=100072827313021">
+          <img src="./Assets/UI/Facebook Icon.svg" class="footer-link-icon">
+        </a>
+        
+        <a class="footer-link-btn" href="https://www.instagram.com/calvin_anacia/">
+          <img src="./Assets/UI/Instagram Icon.svg" class="footer-link-icon">
+        </a>
+
+        <a class="footer-link-btn" href="https://twitter.com/calvin_anacia">
+          <img src="./Assets/UI/Twitter Icon.svg" class="footer-link-icon">
+        </a>
+
+        <a class="footer-link-btn" href="https://www.youtube.com/watch?v=yCCTVWKdJgI">
+          <img src="./Assets/UI/Youtube Button.svg" class="footer-link-icon">
+        </a>
+
+      </ol>
+
+    </footer>
+
+</body>
+
+<script src="./Scripts/item_hover.js"></script>
+<script src="./Scripts/drawer.js"></script>
+
+</html>

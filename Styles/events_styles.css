@@ -1,0 +1,139 @@
+.featured-event {
+    width: calc(100% - 100px);
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-video {
+    width: 55%;
+    border-radius: 10px;
+}
+
+.featured-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.event-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5rem;
+    
+}
+
+.event-item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.event-item:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.event-img {
+    width: 25rem;
+    height: 18.75rem;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.event-info-container {
+    color: #797979;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.event-info-icon {
+    width: 1rem;
+    height: 1rem;
+    object-fit: contain;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+#E1 {
+    background-color: black;
+}
+
+#E2 {
+    background-color: #2BCDB6;
+}
+
+#E3 {
+    background-color: #A72E52;
+}
+
+#E4 {
+    background-color: #FFE500;
+}
+
+@media (max-width: 768px) {
+    .featured-event {
+        width: calc(100% - 50px);
+        margin: 25px;
+        flex-direction: column-reverse;
+    }
+
+    .featured-video {
+        margin-top: 5%;
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+    }
+
+    .featured-info {
+        width: 80%;
+    }
+
+    .featured-btn {
+        width: 50%;
+        margin-top: 2.5%;
+    }
+    
+    .event-list {
+        grid-template-columns: repeat(auto-fit, 12.5rem);
+        gap: 3rem;
+    }
+    
+    .event-item {
+        width: 12.5rem;
+    }
+    
+    .event-img {
+        width: 12.5rem;
+        height: 9rem;
+    }
+    
+    .event-info-container {
+        align-items: center;
+        font-size: 0.7rem;
+    }
+    
+    .event-info-icon {
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}

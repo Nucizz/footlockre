@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootLockRE | Subscribe</title>
+
+    <link href="./Styles/main_styles.css" rel="stylesheet">
+    <link href="./Styles/subscribe_styles.css" rel="stylesheet">
+    
+
+</head>
+<body id="scroll-control">
+    
+    <header>
+        
+        <img src="./Assets/FootLockRE Logo.png" class="logo-head">
+
+        <nav>
+
+            <a class="nav-btn" href="./home.html">Home</a>
+            <a class="nav-btn" href="./shoes.html">Shoes</a>
+            <a class="nav-btn" href="./aboutus.html">About Us</a>
+            <a class="nav-btn" href="./events.html">Events</a>
+            <a class="nav-btn" href="./subscribe.html">Subscribe</a>
+
+        </nav>
+
+        <div class="nav-dropdown">
+
+          <a class="nav-dropdown-btn">
+            <img src="./Assets/UI/Hamburger Icon.svg" class="nav-dropdown-btn-icon">
+          </a>
+
+          <div class="nav-dropdown-list">
+            <a class="nav-dropdown-item" href="./home.html">Home</a>
+            <a class="nav-dropdown-item" href="./shoes.html">Shoes</a>
+            <a class="nav-dropdown-item" href="./aboutus.html">About Us</a>
+            <a class="nav-dropdown-item" href="./events.html">Events</a>
+            <a class="nav-dropdown-item" href="./subscribe.html">Subscribe</a>
+          </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+      <div class="benefit" style="margin-top: 5%; margin-bottom: 2.5%;">
+
+        <h1>JOIN THE SOCIETY</h1>
+
+        <ol class="benefit-list">
+
+          <div class="benefit-item">
+            <img src="./Assets/UI/Benefit Sale Updates.svg" class="benefit-img">
+            <h3>Sale Updates</h3>
+            <h6>Early access to sales and promotions</h6>
+          </div>
+
+          <div class="benefit-item">
+            <img src="./Assets/UI/Benefit New Arrivals.svg" class="benefit-img">
+            <h3>New Arrivals</h3>
+            <h6>Updates on new shoe releases and collections</h6>
+          </div>
+
+          <div class="benefit-item">
+            <img src="./Assets/UI/Benefit Fashion Guides.svg" class="benefit-img">
+            <h3>Fashion Guides</h3>
+            <h6>Personalized sneakers tips and recommendations</h6>
+          </div>
+
+          <div class="benefit-item">
+            <img src="./Assets/UI/Benefit Personal Services.svg" class="benefit-img">
+            <h3>Personal Services</h3>
+            <h6>Personal customer services for better experience</h6>
+          </div>
+
+        </ol>
+
+      </div>
+
+      <div class="container">
+
+        <img src="./Assets/Pages/Subscribe Banner.webp" class="banner">
+
+        <div class="form-container">
+
+          <h2 style="color: white;">SNEAK PEEK</h2>
+
+          <form class="form-input">
+
+              <div style="margin-bottom: 15px;">
+                Full Name
+                <input type="text" class="form-textfield" placeholder="John Doe" id="name">
+              </div>
+
+              <div style="margin-bottom: 15px;">
+                Email Address
+                <input type="email" class="form-textfield" placeholder="example@email.com" id="email">
+              </div>
+
+              <div style="margin-bottom: 15px;">
+                Phone Number
+                <input type="tel" class="form-textfield" placeholder="+1 2345-5678-9012" id="phone">
+              </div>
+
+              <div style="margin-bottom: 15px;" >
+                Country
+                <select class="form-textfield" id="country">
+                  <option value="" disabled selected>Select your country</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="United States">United States</option>
+                </select>
+              </div>              
+
+              <div class="form-checkbox">
+                <input type="checkbox" id="agreement">
+                I agree to FootLockRE's&nbsp;<a class="link">Privacy Policy</a>&nbsp;and&nbsp;<a class="link">Terms of Use</a>
+              </div>
+
+          </form>
+
+          <button class="form-btn" onclick="submit()">Subscribe</button>
+
+        </div>
+
+      </div>
+
+      <div class="information">
+        By subscribing to FootLockRE's newsletter, customers can stay up to date with the latest shoe trends and receive early discounts and promotions notice, along with personalized recommendations and customer services. Sign up now and join our community of shoe enthusiasts!
+      </div>
+
+      <div class="popup-container" id="confirmation-popup">
+
+        <div class="popup">
+
+          <img src="./Assets/Pages/Subscribe Thanks.webp" class="popup-banner">
+
+          <div class="popup-information">
+
+            <h3 class="popup-information-title">WELCOME TO THE SOCIETY!</h3>
+
+            <div class="popup-information-description">
+              <p class="popup-information-text">Hello <span id="display-name">User</span>, thank you for subscribing to our newsletter. We are excited to give see you in your best sneaker.</p>
+              <p class="popup-information-text" style="color:#9747FF;">#morethansneaker</p>
+            </div>
+
+            <button onclick="closePopup()" class="popup-btn">Confirm</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      <a class="footer-logo" href="#">
+        <img src="./Assets/UI/FootLockRE Footer.svg" class="footer-logo-img">
+      </a>
+
+      <span class="footer-text">Copyright © 2023 FootLockRE. All rights reserved.</span>
+
+      <ol class="footer-link">
+
+        <a class="footer-link-btn" href="https://www.facebook.com/profile.php?id=100072827313021">
+          <img src="./Assets/UI/Facebook Icon.svg" class="footer-link-icon">
+        </a>
+        
+        <a class="footer-link-btn" href="https://www.instagram.com/calvin_anacia/">
+          <img src="./Assets/UI/Instagram Icon.svg" class="footer-link-icon">
+        </a>
+
+        <a class="footer-link-btn" href="https://twitter.com/calvin_anacia">
+          <img src="./Assets/UI/Twitter Icon.svg" class="footer-link-icon">
+        </a>
+
+        <a class="footer-link-btn" href="https://www.youtube.com/watch?v=yCCTVWKdJgI">
+          <img src="./Assets/UI/Youtube Button.svg" class="footer-link-icon">
+        </a>
+
+      </ol>
+
+    </footer>
+
+</body>
+
+<script src="./Scripts/subscribe_handler.js"></script>
+
+</html>

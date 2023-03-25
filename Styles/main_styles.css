@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {box-sizing:border-box}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden !important;
+}
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    color: #797979;
+    background-color: #797979;
+}
+
+h1 { /* Headings */
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+h2 { /* Title */
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+h3 { /* Name+ */
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+    max-lines: 2;
+}
+
+h4 { /* Name */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    max-lines: 2;
+}
+
+h5 { /* Price */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #9747FF;
+    margin: 0;
+}
+
+h6 { /* Description */
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: #797979;
+    margin: 0;
+    max-lines: 2;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+button {
+    height: 2.75rem;
+    width: 10rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    border-style: none;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #9747FF;
+    transition: 0.3s;
+}
+
+marquee {
+    direction: left;
+    background-color: #9747FF;
+    color: white;
+    font-size: 16px;
+    height: 24px;
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 4.5rem;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-head {
+    width: 12.5rem;
+    object-fit: contain;
+}
+
+nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    color: #9747FF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-dropdown {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: 0.3s
+}
+
+.footer-logo:hover {
+    filter: brightness(50%);
+    transition: 0.3s
+}
+
+.footer-logo-img {
+    width: 7.5rem;
+    object-fit: contain;
+}
+
+.footer-link {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.footer-link-btn {
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: 0.3s
+}
+
+.footer-link-btn:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: 0.3s
+}
+
+.link {
+    color: #9747FF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    
+    hr {
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    h1 { /* Headings */
+        font-size: calc(1.8vw + 1.8vh + 1vmin);
+        margin: 0;
+    }
+
+    h2 { /* Title */
+        font-size: calc(1.25vw + 1.25vh + 1vmin);
+        margin: 0;
+        font-weight: 600;
+    }
+
+    h3 { /* Name+ */
+        font-size: 1.1rem;
+        /* font-size: calc(1.4vw + 1.4vh + 1vmin); */
+        font-weight: 600;
+        margin: 0;
+        max-lines: 2;
+    }
+
+    h4 { /* Name */
+        font-size: calc(0.6vw + 0.6vh + 1vmin);
+        font-weight: 600;
+        margin: 0;
+        max-lines: 2;
+    }
+
+    h5 { /* Price */
+        font-size: calc(0.6vw + 0.6vh + 1vmin);
+        font-weight: 600;
+        color: #9747FF;
+        margin: 0;
+    }
+
+    h6 { /* Description */
+        font-size: calc(0.5vw + 0.5vh + 1vmin);
+        font-weight: 300;
+        color: #797979;
+        margin: 0;
+        max-lines: 2;
+    }
+
+    p {
+        font-size: calc(0.4vw + 0.4vh + 1vmin);
+    }
+
+    button {
+        height: 2rem;
+        width: 6rem;
+        border-radius: 5px;
+        font-size: 0.8rem;
+    }
+
+    marquee {
+        text-decoration: none;
+    }
+
+    header {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 50px;
+    }
+
+    .logo-head {
+        height: 50%;
+        width: auto;  
+    }
+
+    nav {
+        visibility: collapse;
+    }
+
+    .nav-dropdown {
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    .nav-dropdown-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-dropdown-btn-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .nav-dropdown:hover .nav-dropdown-list {
+        display: block;
+    }
+
+    .nav-dropdown-list {
+        border-radius: 10px;
+        display: none;
+        position: absolute;
+        background-color: #9747FF;
+        margin-top: 2.75rem;
+        min-width: 200px;
+        z-index: 1;
+    }
+
+    .nav-dropdown-item {
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        display: block;   
+    }
+
+    footer {
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 2rem;
+    }
+
+    .footer-logo {
+        width: 30%;
+    }
+
+    .footer-logo-img {
+        width: 100%;
+    }
+
+    .footer-text {
+        width: calc(100% - 50px);
+        text-align: center;
+        font-size: calc(0.25vw + 0.25vh + 1vmin);
+    }
+
+    .footer-link {
+        width: 30%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-link-btn {
+        width: 15%;
+    }
+
+    .footer-link-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+}
