@@ -89,6 +89,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    flex-direction: row;
 }
 
 input[type="checkbox"] {
@@ -140,6 +141,20 @@ input[type="checkbox"] {
 .form-btn:hover {
     filter: brightness(50%);
     transition: 0.3s;
+}
+
+.form-error-container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: start;
+}
+
+.form-error {
+    color: rgb(255, 131, 131);
+    /* font-size: calc(0.4vw + 0.4vh + 1vmin); */
+    font-size: 0.8rem;
+    margin-left: 5px;
 }
 
 .information {
@@ -257,6 +272,10 @@ input[type="checkbox"] {
         min-width: 50%;
         font-size: 1rem;
         font-weight: 600;
+    }
+
+    .form-error {
+        font-size: calc(0.6vw + 0.6vh + 1vmin);
     }
     
     .information {

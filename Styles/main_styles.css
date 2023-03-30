@@ -229,7 +229,6 @@ footer {
 
     h3 { /* Name+ */
         font-size: 1.1rem;
-        /* font-size: calc(1.4vw + 1.4vh + 1vmin); */
         font-weight: 600;
         margin: 0;
         max-lines: 2;

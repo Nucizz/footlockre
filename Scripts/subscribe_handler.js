@@ -3,9 +3,18 @@ let address = document.getElementById("address");
 let phone = document.getElementById("phone");
 let country = document.getElementById("country");
 let agreement = document.getElementById("agreement");
+
+let nameError = document.getElementById("e-name");
+let emailError = document.getElementById("e-email");
+let phoneError = document.getElementById("e-phone");
+let countryError = document.getElementById("e-country");
+let agreementError = document.getElementById("e-agreement");
+
 let popup = document.getElementById("confirmation-popup");
 let displayName = document.getElementById("display-name");
 let scrollController = document.getElementById("scroll-control");
+
+errorInit();
 closePopup();
 
 // Since we're not allowed to use REGEXP, I created some functions that kinda acts
@@ -82,41 +91,52 @@ function phoneVal(str) {
 }
 
 function validation() {
+    errorInit();
+    let valid = true;
+
     if(fullname.value == "") {
-        alert("Please enter your fullname!");
-        return false;
+        // alert("Please enter your fullname!");
+        showError(nameError, "*");
+        valid = false;
     } else if (fullname.value.length < 4 || fullname.value.length > 64) {
-        alert("Please enter your fullname [4 - 64 characters]");
-        return false;
+        // alert("Please enter your fullname [4 - 64 characters]");
+        showError(nameError, "length 4-64 characters*");
+        valid = false;
     }
     
     if(email.value == "") {
-        alert("Please enter your email address!");
-        return false;
+        // alert("Please enter your email address!");
+        showError(emailError, "*");
+        valid = false;
     } else if (!emailVal(email.value)) {
-        alert("Please enter a valid email address!");
-        return false;
+        // alert("Please enter a valid email address!");
+        showError(emailError, "enter a valid email*");
+        valid = false;
     }
     
     if(phone.value == "") {
-        alert("Please enter your phone number!");
-        return false;
+        // alert("Please enter your phone number!");
+        showError(phoneError, "*");
+        valid = false;
     } else if (!phoneVal(phone.value)) {
-        alert("Please enter a valid phone number!");
-        return false;
+        // alert("Please enter a valid phone number!");
+        showError(phoneError, "enter a valid number*");
+        valid = false;
     }
 
     if(country.value == "") {
-        alert("Please select your country");
-        return false;
+        // alert("Please select your country");
+        showError(countryError, "*");
+        valid = false;
     }
     
     if(agreement.checked == false) {
-        alert("Please agree to our terms and condition");
-        return false;
+        // alert("Please agree to our terms and condition");
+        showError(agreementError, "*");
+        valid = false;
     } 
 
-    return true;
+    return valid;
 }
 
 function nameEditor(str) {
@@ -138,6 +158,19 @@ function showPopup() {
 function closePopup() {
     popup.style.display = "none";
     scrollController.style.overflow = "scroll";
+}
+
+function errorInit() {
+    nameError.style.display = "none";
+    emailError.style.display = "none";
+    phoneError.style.display = "none";
+    countryError.style.display = "none";
+    agreementError.style.display = "none";
+}
+
+function showError(element, str) {
+    element.style.display = "flex";
+    element.innerHTML = str;
 }
 
 function submit() {

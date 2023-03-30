@@ -92,22 +92,34 @@
           <form class="form-input">
 
               <div style="margin-bottom: 15px;">
-                Full Name
+                <div class="form-error-container">
+                  Full Name
+                  <span class="form-error" id="e-name">*</span>
+                </div>
                 <input type="text" class="form-textfield" placeholder="John Doe" id="name">
               </div>
 
               <div style="margin-bottom: 15px;">
-                Email Address
+                <div class="form-error-container">
+                  Email Address
+                  <span class="form-error" id="e-email">*</span>
+                </div>
                 <input type="email" class="form-textfield" placeholder="example@email.com" id="email">
               </div>
 
               <div style="margin-bottom: 15px;">
-                Phone Number
+                <div class="form-error-container">
+                  Phone Number
+                  <span class="form-error" id="e-phone">*</span>
+                </div>
                 <input type="tel" class="form-textfield" placeholder="+1 2345-5678-9012" id="phone">
               </div>
 
-              <div style="margin-bottom: 15px;" >
-                Country
+              <div style="margin-bottom: 15px;">
+                <div class="form-error-container">
+                  Country
+                  <span class="form-error" id="e-country">*</span>
+                </div>
                 <select class="form-textfield" id="country">
                   <option value="" disabled selected>Select your country</option>
                   <option value="Canada">Canada</option>
@@ -122,6 +134,7 @@
               <div class="form-checkbox">
                 <input type="checkbox" id="agreement">
                 I agree to FootLockRE's&nbsp;<a class="link">Privacy Policy</a>&nbsp;and&nbsp;<a class="link">Terms of Use</a>
+                <span class="form-error" id="e-agreement">*</span>
               </div>
 
           </form>
